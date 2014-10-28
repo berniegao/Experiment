@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1033]D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\AppiumDotNetSample.dll</TopNode>
+  <SelectedNode>[0-1001]Appium.Samples.WebPageTest.FindElementTestCase</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1033]D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\AppiumDotNetSample.dll" Expanded="true" />
+    <Node UniqueName="[0-1034]Appium" Expanded="true" />
+    <Node UniqueName="[0-1035]Appium.Samples" Expanded="true" />
+    <Node UniqueName="[0-1000]Appium.Samples.WebPageTest" Expanded="true" />
+  </Nodes>
+</VisualState>
