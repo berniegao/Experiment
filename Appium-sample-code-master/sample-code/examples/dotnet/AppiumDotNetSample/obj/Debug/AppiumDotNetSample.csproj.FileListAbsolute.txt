@@ -1,0 +1,11 @@
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\AppiumDotNetSample.dll
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\AppiumDotNetSample.pdb
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\appium-dotnet-driver.dll
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\Newtonsoft.Json.dll
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\nunit.framework.dll
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\WebDriver.dll
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\nunit.framework.xml
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\Newtonsoft.Json.xml
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\WebDriver.xml
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\obj\Debug\AppiumDotNetSample.dll
+D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\obj\Debug\AppiumDotNetSample.pdb

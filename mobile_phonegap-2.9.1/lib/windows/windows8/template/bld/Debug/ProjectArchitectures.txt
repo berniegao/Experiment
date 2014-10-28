@@ -1,0 +1,1 @@
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\CordovaApp.jsproj;neutral

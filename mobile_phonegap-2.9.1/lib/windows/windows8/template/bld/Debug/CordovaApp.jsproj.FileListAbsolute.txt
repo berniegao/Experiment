@@ -1,0 +1,14 @@
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bin\Debug\resources.pri
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bin\Debug\AppxManifest.xml
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\priconfig.xml
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\priconfig.xml.intermediate
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\layout.resfiles
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\layout.resfiles.intermediate
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\resources.resfiles
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\resources.resfiles.intermediate
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\pri.resfiles
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\pri.resfiles.intermediate
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\qualifiers.txt
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\qualifiers.txt.intermediate
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\projects\Experiment\mobile_phonegap-2.9.1\lib\windows\windows8\template\bld\Debug\ProjectArchitectures.txt

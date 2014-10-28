@@ -1,0 +1,7 @@
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\obj\Debug\TogglingDoorsTest.csprojResolveAssemblyReference.cache
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\bin\Debug\TogglingDoorsTest.dll
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\bin\Debug\TogglingDoorsTest.pdb
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\bin\Debug\TogglingDoors-Kata.exe
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\bin\Debug\TogglingDoors-Kata.pdb
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\obj\Debug\TogglingDoorsTest.dll
+D:\projects\Experiment\TogglingDoors-Kata\TogglingDoorsTest\obj\Debug\TogglingDoorsTest.pdb

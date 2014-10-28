@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\AppiumDotNetSample.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-09-26" time="16:14:28">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="EXE-PC" user="exe" user-domain="EXE-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\bin\Debug\AppiumDotNetSample.dll" executed="True" result="Failure" success="False" time="60.037" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Appium" executed="True" result="Failure" success="False" time="60.032" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Samples" executed="True" result="Failure" success="False" time="60.030" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="WebPageTest" executed="True" result="Error" success="False" time="60.011" asserts="0">
+                <failure>
+                  <message><![CDATA[SetUp : OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://127.0.0.1:4723/wd/hub/session timed out after 60 seconds.
+  ----> System.Net.WebException : The request was aborted: The operation has timed out.]]></message>
+                  <stack-trace><![CDATA[at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+at OpenQA.Selenium.Appium.AppiumDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at Appium.Samples.WebPageTest.BeforeAll() in d:\projects\Experiment\Appium-sample-code-master\sample-code\examples\dotnet\AppiumDotNetSample\WebPageTest.cs:line 30
+--WebException
+at System.Net.HttpWebRequest.GetResponse()
+at OpenQA.Selenium.Remote.HttpCommandExecutor.CreateResponse(WebRequest request)
+]]></stack-trace>
+                </failure>
+                <results>
+                  <test-case name="Appium.Samples.WebPageTest.FindElementTestCase" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in WebPageTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

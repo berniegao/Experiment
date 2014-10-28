@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglingDoors-Kata", "TogglingDoors-Kata\TogglingDoors-Kata.csproj", "{CBF82054-803F-46D1-B39C-20416A6C79B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglingDoorsTest", "TogglingDoorsTest\TogglingDoorsTest.csproj", "{6C58351B-D2FB-41BD-8722-7B63B7FFC507}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF82054-803F-46D1-B39C-20416A6C79B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF82054-803F-46D1-B39C-20416A6C79B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF82054-803F-46D1-B39C-20416A6C79B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF82054-803F-46D1-B39C-20416A6C79B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C58351B-D2FB-41BD-8722-7B63B7FFC507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C58351B-D2FB-41BD-8722-7B63B7FFC507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C58351B-D2FB-41BD-8722-7B63B7FFC507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C58351B-D2FB-41BD-8722-7B63B7FFC507}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

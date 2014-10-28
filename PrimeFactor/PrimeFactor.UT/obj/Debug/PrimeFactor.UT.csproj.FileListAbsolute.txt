@@ -1,0 +1,7 @@
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\obj\Debug\PrimeFactor.UT.csprojResolveAssemblyReference.cache
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\bin\Debug\PrimeFactor.UT.dll
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\bin\Debug\PrimeFactor.UT.pdb
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\obj\Debug\PrimeFactor.UT.dll
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\obj\Debug\PrimeFactor.UT.pdb
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\bin\Debug\PrimeFactor.exe
+D:\projects\Experiment\PrimeFactor\PrimeFactor.UT\bin\Debug\PrimeFactor.pdb

@@ -1,0 +1,1 @@
+D:\projects\Experiment\Enterprise Library 6 - Hands-on Labs\Interception\exercises\Lab10\After\InterceptionHOL\bin\Debug\InterceptionHOL.exe.config

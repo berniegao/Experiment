@@ -1,0 +1,46 @@
+﻿<div ng-app="sortableApp" ng-controller="sortableController" class="container">
+    <h2>ui.sortable connected lists event order</h2>
+
+    <div class="floatleft">
+        <ul id="list1" ui-sortable="sortableOptionsList[0]" class="apps-container screen floatleft" ng-model="rawScreens[0]">
+            <li class="app" ng-repeat="app in rawScreens[0]">{{$index}} {{app.title}}</li>
+        </ul>
+        <ul ui-sortable="sortableOptionsList[1]" class="apps-container screen floatleft" ng-model="rawScreens[1]">
+            <li class="app" ng-repeat="app in rawScreens[1]">{{$index}} {{app.title}}</li>
+        </ul>
+        <ul ui-sortable="sortableOptionsList[2]" class="apps-container screen floatleft" ng-model="rawScreens[2]">
+            <li class="app" ng-repeat="app in rawScreens[2]">{{$index}} {{app.title}}</li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="floatright">
+        <button type="button" ng-click="logModels()">Log Models</button>
+        <ul class="list logList">
+            <li ng-repeat="entry in sortingLog" class="logItem">
+                {{entry}}
+            </li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+    <button id="addNew"> add new</button>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+
+    <script src="sortable.js"></script>
+    <script src="site.js"></script>
+    <link href="site.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#addNew").click(function()
+            {
+                $("#list1").children[$("#list1").children.length -1].append("<li class='app ng-scope ng-binding' ng-repeat='app in rawScreens[0]'>TESTING (a)</li>");
+            })
+        })
+    </script>
+</div>

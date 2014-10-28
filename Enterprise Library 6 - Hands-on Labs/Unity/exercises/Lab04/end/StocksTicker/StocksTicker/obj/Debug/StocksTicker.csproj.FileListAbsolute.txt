@@ -1,0 +1,1 @@
+D:\projects\Experiment\Enterprise Library 6 - Hands-on Labs\Unity\exercises\Lab04\end\StocksTicker\StocksTicker\bin\Debug\StocksTicker.exe.config
