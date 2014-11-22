@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appcmd>
+    <SITE SITE.NAME="landzltd" SITE.ID="2" bindings="http/*:8001:" state="Started">
+        <site name="landzltd" id="2" serverAutoStart="true">
+            <bindings>
+                <binding protocol="http" bindingInformation="*:8001:" />
+            </bindings>
+            <limits />
+            <logFile logTargetW3C="File, ETW">
+                <customFields>
+                </customFields>
+            </logFile>
+            <traceFailedRequestsLogging />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                    <customAuthorization>
+                        <provider />
+                    </customAuthorization>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="landz">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="D:\projects\Landzltd\WebApp" />
+            </application>
+        </site>
+    </SITE>
+    <SITE SITE.NAME="experiment" SITE.ID="6" bindings="http/*:9999:" state="Started">
+        <site name="experiment" id="6">
+            <bindings>
+                <binding protocol="http" bindingInformation="*:9999:" />
+            </bindings>
+            <limits />
+            <logFile>
+                <customFields>
+                </customFields>
+            </logFile>
+            <traceFailedRequestsLogging />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                    <customAuthorization>
+                        <provider />
+                    </customAuthorization>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="experiment">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="D:\projects\Experiment" />
+                <virtualDirectory path="/angular-ui-router" physicalPath="D:\projects\Experiment\web-angular-ui-router-master" />
+            </application>
+        </site>
+    </SITE>
+    <SITE SITE.NAME="experiment-umbraco" SITE.ID="5" bindings="http/*:9998:" state="Started">
+        <site name="experiment-umbraco" id="5">
+            <bindings>
+                <binding protocol="http" bindingInformation="*:9998:" />
+            </bindings>
+            <limits />
+            <logFile>
+                <customFields>
+                </customFields>
+            </logFile>
+            <traceFailedRequestsLogging />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                    <customAuthorization>
+                        <provider />
+                    </customAuthorization>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="experiment-umbraco">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="D:\projects\Experiment\cms-umbraco-xl\src\Umbraco.Web.UI" />
+            </application>
+        </site>
+    </SITE>
+    <SITE SITE.NAME="Vine" SITE.ID="1" bindings="http/*:9001:" state="Started">
+        <site name="Vine" id="1">
+            <bindings>
+                <binding protocol="http" bindingInformation="*:9001:" />
+            </bindings>
+            <limits />
+            <logFile>
+                <customFields>
+                </customFields>
+            </logFile>
+            <traceFailedRequestsLogging />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                    <customAuthorization>
+                        <provider />
+                    </customAuthorization>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="Vinew">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="D:\projects\Vine\src\Vine-web\Web" />
+            </application>
+        </site>
+    </SITE>
+</appcmd>

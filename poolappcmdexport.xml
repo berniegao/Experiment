@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appcmd>
+    <APPPOOL APPPOOL.NAME="Vine" PipelineMode="Classic" RuntimeVersion="v4.0" state="Started">
+        <add name="Vine" managedRuntimeVersion="v4.0" managedPipelineMode="Classic">
+            <processModel />
+            <recycling>
+                <periodicRestart>
+                    <schedule>
+                    </schedule>
+                </periodicRestart>
+            </recycling>
+            <failure />
+            <cpu />
+        </add>
+    </APPPOOL>
+    <APPPOOL APPPOOL.NAME="landz" PipelineMode="Integrated" RuntimeVersion="v4.0" state="Started">
+        <add name="landz" autoStart="true" managedRuntimeVersion="v4.0">
+            <processModel />
+            <recycling>
+                <periodicRestart>
+                    <schedule>
+                    </schedule>
+                </periodicRestart>
+            </recycling>
+            <failure />
+            <cpu />
+        </add>
+    </APPPOOL>
+    <APPPOOL APPPOOL.NAME="experiment" PipelineMode="Integrated" RuntimeVersion="v4.0" state="Started">
+        <add name="experiment">
+            <processModel />
+            <recycling>
+                <periodicRestart>
+                    <schedule>
+                    </schedule>
+                </periodicRestart>
+            </recycling>
+            <failure />
+            <cpu />
+        </add>
+    </APPPOOL>
+    <APPPOOL APPPOOL.NAME="experiment-umbraco" PipelineMode="Integrated" RuntimeVersion="v4.0" state="Started">
+        <add name="experiment-umbraco">
+            <processModel />
+            <recycling>
+                <periodicRestart>
+                    <schedule>
+                    </schedule>
+                </periodicRestart>
+            </recycling>
+            <failure />
+            <cpu />
+        </add>
+    </APPPOOL>
+    <APPPOOL APPPOOL.NAME="Vinew" PipelineMode="Integrated" RuntimeVersion="v4.0" state="Started">
+        <add name="Vinew">
+            <processModel />
+            <recycling>
+                <periodicRestart>
+                    <schedule>
+                    </schedule>
+                </periodicRestart>
+            </recycling>
+            <failure />
+            <cpu />
+        </add>
+    </APPPOOL>
+</appcmd>
