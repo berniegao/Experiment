@@ -1,0 +1,48 @@
+﻿<div ng-controller="Articulate.Dashboard.BlogImporter">
+    <h3>Articulate BlogMl importer</h3>
+    <form name="articulateImportForm" ng-submit="submit()" novalidate val-form-manager>
+        <umb-control-group alias="articulateNodeId" description="Enter the Articulate blog node Id to import to"
+                           label="Articulate blog node Id">
+            <input type="number" ng-model="$parent.articulateNodeId" name="articulateNodeId" required />
+            <span class="help-inline" val-msg-for="articulateNodeId" val-toggle-msg="required">Required</span>
+        </umb-control-group>
+
+        <umb-control-group alias="blogMlXmlFile" description="Select BlogMl xml file to import"
+                           label="BlogMl import file">
+            <input type="file" class="" umb-file-upload name="blogMlXmlFile" required-file accept="text/xml" ng-model="blogMlXmlFile" />
+            <span class="help-inline" val-msg-for="blogMlXmlFile" val-toggle-msg="required">Required</span>
+        </umb-control-group>
+
+        <umb-control-group alias="overwrite" description="Check if you want to overwrite posts already imported"
+                           label="Overwrite imported posts?">
+            <input type="checkbox" class="" name="overwrite" ng-model="$parent.overwrite" />
+        </umb-control-group>
+
+        <umb-control-group alias="publish" description="Check if you want all imported posts to be published"
+                           label="Publish all posts?">
+            <input type="checkbox" class="" name="publish" ng-model="$parent.publish" />
+        </umb-control-group>
+
+        <umb-control-group alias="regexMatch" description="Regex statement used to match content in the blog post to be replaced by the match statement"
+                           label="Regex match expression">
+            <input type="text" class="" name="regexMatch" ng-model="$parent.regexMatch" />
+        </umb-control-group>
+
+        <umb-control-group alias="regexReplace" description="Replacement statement used with the above match statement"
+                           label="Regex replacement statement">
+            <input type="text" class="" name="regexReplace" ng-model="$parent.regexReplace" />
+        </umb-control-group>
+        
+        <umb-control-group alias="exportDisqusXml" description="If you would like Articulate to output an XML file that you can use to import the comments found in this file in to Disqus"
+                           label="Export Disqus Xml">
+            <input type="checkbox" class="" name="exportDisqusXml" ng-model="$parent.exportDisqusXml" />
+        </umb-control-group>
+
+        <umb-control-group>
+            <input type="submit" ng-if="!submitting" />
+            <p ng-bind-html="status"></p>
+            <p ng-if="status === 'Finished!'" ng-show="$parent.exportDisqusXml == 1">Click <a href='/media/articulate/DisqusXmlExport.xml' target='_blank'>here</a> to download the exported Disqus Xml file</p>
+        </umb-control-group>
+
+    </form>
+</div>

@@ -1,0 +1,128 @@
+﻿@using Articulate.Controllers
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web.Editors
+@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="articulateapp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Articulate - Create New Post</title>
+    
+    @{
+        Html
+            .RequiresCss("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+            .RequiresCss("~/App_Plugins/Articulate/Assets/md-editor.css")
+            .RequiresJs("http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+            .RequiresJs("http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js")
+            .RequiresJs("http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.min.js")
+            .RequiresJs("http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.min.js")
+            .RequiresJs("http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.min.js")
+            .RequiresJs("~/App_Plugins/Articulate/Assets/md-editor.js");
+    }
+    @Html.RenderCssHere()
+    @Html.RenderJsHere()
+
+    <script type="text/ng-template" id="md.html">
+        <div class="btn-top prev">
+            <button class="btn-insert-file" ng-click="addFile()"><i class="fa fa-picture-o"></i></button>
+            <button class="btn-insert-file" ng-click="addCamera()"><i class="fa fa-camera"></i></button>
+        </div>
+
+
+        <div class="container">
+            <div class="form-element">
+                <input type="text" ng-model="$parent.title" placeholder="Title..." required />
+            </div>
+            <div class="md-input">
+                <textarea id="mdInput"
+                          ng-model="$parent.md" placeholder="Start writing blog post here..." required
+                          ng-keyup="storeCaret()"
+                          ng-click="storeCaret()"></textarea>
+            </div>
+        </div>
+        <div class="hidden-insert-file">
+
+            <input id='insertFile' type='file' accept='image/*' files-selected />
+            <input id='insertCamera' type='file' accept='image/*' files-selected capture="camera" />
+
+        </div>
+
+    </script>
+
+    <script type="text/ng-template" id="optional.html">
+        <div class="container">
+            <div class="form-element">
+                <label>Tags</label>
+                <input type="text" ng-model="$parent.tags" placeholder="Tags..." />
+            </div>
+            <div class="form-element">
+                <label>Categories</label>
+                <input type="text" ng-model="$parent.categories" placeholder="Categories..." />
+            </div>
+            <div class="form-element">
+                <label>Excerpt</label>
+                <textarea ng-model="$parent.excerpt" placeholder="Excerpt..." rows="4"></textarea>
+            </div>
+            <div class="form-element">
+                <label>Slug</label>
+                <input type="text" ng-model="$parent.slug" placeholder="Slug..." />
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="login.html">
+        <div class="container">
+            <div class="form-element">
+                <label>Username</label>
+                <input type="text" ng-model="username" placeholder="Username..." required />
+            </div>
+            <div class="form-element">
+                <label>Password</label>
+                <input type="password" ng-model="password" placeholder="Password..." required />
+            </div>
+            <div class="form-element">
+                <button class="btn-top" type="submit" ng-click="login()" class="next">Login</button>
+            </div>
+            <div class="form-element" ng-if="failed === true">
+                Invalid username or password, try again
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="submit.html">
+        <div class="container">
+            <p ng-if="!result">
+                Sending data...
+            </p>
+            <h3 ng-if="result">
+                Success!
+            </h3>
+            <p ng-if="result">
+                <a href="{{result}}">Click here to view your post</a>
+            </p>
+        </div>
+    </script>
+
+</head>
+
+<body ng-controller="EditorController"
+      data-articulate-nodeid="@ViewBag.articulateNodeId"
+      data-articulate-post-url="@(Url.GetUmbracoApiService<MardownEditorApiController>(controller => controller.PostNew()))"
+      data-umbraco-isauth-url="@(Url.GetUmbracoApiService<AuthenticationController>(controller => controller.IsAuthenticated()))"
+      data-umbraco-doauth-url="@(Url.GetUmbracoApiService<AuthenticationController>(controller => controller.PostLogin(null)))">
+    <h1>{{caption}}</h1>
+
+    <form name="articulateForm" novalidate>
+        <button class="btn-top prev" ng-click="go(prevPath)" ng-show="prevPath"><span ng-bind-html="prevText"></span></button>
+        <button class="btn-top next" ng-click="go(nextPath)" ng-show="nextPath"><span ng-bind-html="nextText"></span></button>
+        <div ng-view></div>
+    </form>
+
+</body>
+</html>

@@ -172,6 +172,9 @@ angular.module('uiRouterSample.contacts', [
                   // Here we see we are overriding the template that was set by 'contacts.detail'
                   'hint@': {
                       template: ' This is contacts.detail.item overriding the "hint" ui-view'
+                  },
+                  '@contacts.detail': {
+                      template: 'app/contacts/contacts.detail.item.edit.html'
                   }
               }
           })
